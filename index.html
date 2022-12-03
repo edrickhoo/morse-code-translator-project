@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script type="module" src="./script.js" defer></script>
+    <title>Morse Code Translator</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Morse Code Translator</h1>
+    </header>
+    <main>
+      <div class="translator">
+        <textarea
+          class="translator__input"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Please enter a message"
+        ></textarea>
+        <div class="translator__status-container">
+          <button class="translator__btn">Change Translator</button>
+          <p class="translator__text">Translating to:</p>
+          <p class="translator__status">Morse Code</p>
+        </div>
+        <textarea
+          disabled
+          class="translator__output"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div class="chart">
+        <img
+          class="chart__img"
+          src="./assets/imgs/morse-code-chart.png"
+          alt="morse-code-chart"
+        />
+      </div>
+    </main>
+  </body>
+</html>

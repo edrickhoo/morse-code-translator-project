@@ -1,0 +1,110 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__title {
+  color: white;
+}
+
+body {
+  background-image: url("./assets/background/different_camouflage_pattern_design_vector_set.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(20, 19, 19, 0.514);
+}
+
+.translator {
+  max-width: 1640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 15px;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.translator > * {
+  margin-bottom: 30px;
+}
+.translator__btn {
+  padding: 7px 10px;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid darkolivegreen;
+}
+.translator__btn:hover {
+  background-color: darkolivegreen;
+  color: white;
+}
+.translator__input {
+  padding: 10px;
+  font-size: 22px;
+  resize: none;
+  width: 400px;
+  height: 200px;
+  font-size: 18px;
+}
+.translator__output {
+  padding: 10px;
+  font-size: 22px;
+  resize: none;
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  font-size: 18px;
+}
+.translator__status-container {
+  padding: 0px 50px;
+  color: white;
+}
+.translator__text {
+  text-align: center;
+}
+.translator__status {
+  text-align: center;
+  font-weight: bold;
+}
+@media screen and (min-width: 762px) {
+  .translator {
+    flex-direction: row;
+  }
+  .translator__input {
+    padding: 10px;
+    font-size: 22px;
+    resize: none;
+    width: 400px;
+    height: 200px;
+    font-size: 22px;
+  }
+  .translator__output {
+    padding: 10px;
+    font-size: 22px;
+    resize: none;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    font-size: 22px;
+  }
+}
+
+.chart {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  border-radius: 10px;
+}
+.chart__img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=output.css.map */
