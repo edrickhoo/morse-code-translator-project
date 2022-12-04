@@ -27,6 +27,7 @@ translatorBtn.addEventListener("click", () => {
   toggleTranslateMode();
   updateTranslatorStatus();
   translateInput();
+  checkOutputError();
 });
 
 const translateInput = () => {
@@ -42,6 +43,17 @@ const translateInput = () => {
   translatorOutput.value = translatedOutput;
 };
 
-translatorInput.addEventListener("keyup", () => {
+const error = document.querySelector(".translator__error");
+
+const checkOutputError = () => {
+  if (translatorOutput.value.includes("#")) {
+    error.style.visibility = "visible";
+  } else {
+    error.style.visibility = "hidden";
+  }
+};
+
+translatorInput.addEventListener("input", () => {
   translateInput();
+  checkOutputError();
 });

@@ -23,6 +23,7 @@ body {
 }
 
 .translator {
+  position: relative;
   max-width: 1640px;
   margin-left: auto;
   margin-right: auto;
@@ -37,6 +38,14 @@ body {
 
   & > * {
     margin-bottom: 30px;
+  }
+
+  &__error {
+    text-align: center;
+    background-color: lightcoral;
+    padding: 5px 5px;
+    border-radius: 10px;
+    visibility: hidden;
   }
 
   &__btn {
@@ -66,6 +75,9 @@ body {
   &__status-container {
     padding: 0px 50px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__text {
