@@ -40,11 +40,10 @@ const letterToMorse = {
 };
 
 // Object will be filled with key with morsecode and value of an letter
-const morseToLetter = {};
-
-for (let key in letterToMorse) {
-  morseToLetter[letterToMorse[key]] = key;
-}
+const morseToLetter = Object.keys(letterToMorse).reduce((initial, current) => {
+  initial[letterToMorse[current]] = current;
+  return initial;
+}, {});
 
 export const convertLettersToMorse = (string) => {
   if (string === undefined) {
