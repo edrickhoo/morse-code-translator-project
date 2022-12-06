@@ -7,7 +7,7 @@ const noParamsError = new Error(
   "Nothing was passed in, please pass in a String"
 );
 
-const wrongParamTypeErorr = new Error(
+const wrongParamTypeError = new Error(
   "Invalid parameter type was passed, please pass in a string"
 );
 
@@ -49,13 +49,13 @@ describe("Test cases for converting letters to morse code", () => {
   it("Throw error to enter correct type of string parameter to be passed", () => {
     expect(() => {
       convertLettersToMorse(true);
-    }).toThrow(wrongParamTypeErorr);
+    }).toThrow(wrongParamTypeError);
     expect(() => {
       convertLettersToMorse(["Hello", "World"], null);
-    }).toThrow(wrongParamTypeErorr);
+    }).toThrow(wrongParamTypeError);
     expect(() => {
       convertLettersToMorse({ name: "Hello", age: 21 });
-    }).toThrow(wrongParamTypeErorr);
+    }).toThrow(wrongParamTypeError);
   });
 });
 
@@ -83,12 +83,12 @@ describe("Test cases for converting morse code to letters", () => {
   it("Throw error to enter correct type of string parameter to be passed", () => {
     expect(() => {
       convertMorseToLetter(false);
-    }).toThrow(wrongParamTypeErorr);
+    }).toThrow(wrongParamTypeError);
     expect(() => {
       convertMorseToLetter([32, "World"], null);
-    }).toThrow(wrongParamTypeErorr);
+    }).toThrow(wrongParamTypeError);
     expect(() => {
       convertMorseToLetter({ name: true, age: 212 });
-    }).toThrow(wrongParamTypeErorr);
+    }).toThrow(wrongParamTypeError);
   });
 });
