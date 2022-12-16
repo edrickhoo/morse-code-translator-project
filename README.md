@@ -1,4 +1,4 @@
-# morse-code-translator-project
+# Morse-Code-Translator-Project
 
 ## Preview
 
@@ -20,10 +20,14 @@
 
 ### Testing
 * To install dependencies open terminal cd into the root folder
-`npm install`
+ ```
+ npm install
+ ```
 
 * Run Tests
-`npm run test`
+ ```
+ npm run test
+ ```
   
 
 ## Description of project (spec / MVP)
@@ -37,51 +41,52 @@
 
 ### MVP:
 
-* Create a user interface that allows the user to either input some English text or some Morse Code
+* Create a user interface that allows the user to either input some English text or some Morse Code -- [x]
 
 * Create JS functions that would allow the user to:
+  - translate their English text into Morse Code -- [x]
+  - Morse Code into English text -- [x]
+  
+* Make sure to handle spaces properly (ie. there is 1 space between English words, but one space between Morse Code characters) -- [x]
 
-...translate their English text into Morse Code..
-...Morse Code into English text..
-* Make sure to handle spaces properly (ie. there is 1 space between English words, but one space between Morse Code characters)
-
-* Bonus: Handle other characters as well
+* Bonus: Handle other characters as well -- [x]
 
 * Bonus: Detect if a piece of text is english or morse and translate accordingly
 
-* Split your code between data, logic functions and dom functions
+* Split your code between data, logic functions and dom functions -- [x]
 
-* Develop unit tests for all of your logic functions
+* Develop unit tests for all of your logic functions -- [x]
 
-* Explore and discover edge cases in your code to further develop your tests
+* Explore and discover edge cases in your code to further develop your tests -- [x]
 
 ## Approach
 
-* Broke the app into smaller sections and work on each small feature one by one eg. Working on taskbar, clock, startmenu, each small app one at a time.
-* Research ideas online that I didnt have a good understanding of eg. Draggable windows
+* Broke the app into smaller sections starting with translation logic first, testing the logic and then connecting functionality to HTML elements.
+* Research aspects of the project that was unfamiliar, how morse code works, play around with exisiting translators online.
 * This was made with Javascript instead of other frameworks to solidify my understanding of how to select elements in the DOM and to manipulate them, to give functionality or change styling.
-* Tried to keep things modular with styles seperate in their own component files and linked to one file with sass, Javascript files were seperated logc files and DOM files.
+* To create unit testing for logic functions where react testing is more integreation and component testing.
+* Ensure to cover various edge cases when uniting testing the logic.
+* Tried to keep things modular with Javascript files were seperated logc files, testing files apart from the main script.js
 
 ## Reflection
 
-*  What went well?  Reference images were availiable online so I felt that the styling process was easier and went well.
-*  What are you proud of? I am proud that the paint app works as serveral bugs and debugs occured when building the application.
-*  What was a challenge? Making the windows draggable as trying to implement the function I was selecting the wrong elements and breaking the code.
-*  What you'd do differently? Try to create the rendering of the applications be done in reusable javascript code instead of hard-coding and hiding the divs.
+*  What went well?  After researching I was to grasp a better understanding of how the logic worked which made creating the logic go smoothly.
+*  What are you proud of? I am proud that my understanding of why to split logic into smaller parts increased as splitting it up will allow for testing to be easier and code to be more readable.
+*  What was a challenge? Creating the tests and thinking of edge cases which may occur.
+*  What you'd do differently? Implement test driven development to create the tests first then write the logic to pass the tests.
 
 ## Future Goals
 
-* Add more applications, eg. Photo gallery app
-* Using DRY create DOM functions that render applications dymanically.
-* Add testing for logic components
-* Make the taskbar applications focus when it is clicked
+* Auto detect if the text is latin or morse code and then translate.
+* Add further tests to cover any other possible edge cases.
+* Style the page better, with a color palette.
 
 
 ## Further reading or links to inspiration
 
-*  [DOM CheatSheet]( https://fundamentals.generalassemb.ly/11_unit/dom-cheatsheet.html)
-*  [Code WET or DRY?]( https://dzone.com/articles/is-your-code-dry-or-wet#:~:text=DRY%20code%20is%20a%20software,t%20adhere%20to%20DRY%20principle.)
-*  [Breaking Down Monster Projects]( https://www.informit.com/articles/article.aspx?p=2153472)
+*  [Looping Thorugh Objects]( https://flexiple.com/javascript/loop-through-object-javascript/)
+*  [Jest Docs]( https://jestjs.io/docs/getting-started)
+*  [How Morse Code Works]( https://science.howstuffworks.com/innovation/inventions/5-industrial-revolution-inventions.htm)
 
 ## Stay in touch
 
