@@ -41,8 +41,8 @@
 
 * Create JS functions that would allow the user to:
 
-...translate their English text into Morse Code
-...Morse Code into English text
+...translate their English text into Morse Code..
+...Morse Code into English text..
 * Make sure to handle spaces properly (ie. there is 1 space between English words, but one space between Morse Code characters)
 
 * Bonus: Handle other characters as well
