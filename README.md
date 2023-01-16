@@ -23,11 +23,7 @@
  ```
  npm install
  ```
- * Run Application
- ```
- npm run dev
- ```
-
+ 
 * Run Tests
  ```
  npm run test
